@@ -1,0 +1,115 @@
+// Plug-in
+@import url('bootstrap.css');
+@import url('settings.css');
+
+
+@import "frameworks/lib/nib/index.styl"
+
+// Variables
+@import "base/_vars.styl"
+
+// Structure
+@import "base/structure.styl"
+
+
+
+
+// FOLDERS
+
+$icon = "assets/icons"
+$btn = "assets/btns"
+$bg = "assets/bg";
+
+@import "sprite.styl"
+
+/* General
+===============================*/
+
+.clearfix {
+  clearfix();
+}
+.gisClaro{
+	background-color:$grisClaroColor
+}
+h1,h2,h3,h4,p,a,span{
+	text-align:center
+}
+ul.menu-vertical{
+	margin:0
+	padding:0
+	li{
+		list-style:none
+		display:block
+	}
+}
+ul.menu-horizontal{
+	@extend ul.menu-vertical 
+	li{
+		@extend ul.menu-vertical li
+		float:left
+	}
+}
+
+ul.row{
+	list-style:none
+	
+}
+#menu-global{
+	background-color:$verdeColor
+	height: 30px
+	.menu-otros li{
+		@extend ul.menu-horizontal li
+	}
+	.redes-fanpage li{
+		@extend ul.menu-horizontal li
+		
+		position:relative
+
+
+		&:hover{
+			background-color:$blancoColor
+		}
+		a{
+			height: 30px
+			width: 30px
+			display:block
+			margin:auto
+			margin-top:5px
+		}
+
+	}
+
+	#buscar{
+		transition(all 1s ease 0.0s);
+		background: url( $icon/lupa-normal.png ) no-repeat center center #0068AF
+		padding:4px 26px 4px 0
+		width:0
+		&:hover,&:focus{
+			background: url( $icon/lupa-normal.png ) no-repeat center center #F5F5F5
+			padding-left: 10px
+			transition(all 0.5s ease 0.0s);
+			width: 138px
+
+		}
+	}
+}
+#menu-principal{
+	background-color:$blancoColor
+	height: 95px
+	.menu-otros li{
+		@extend ul.menu-horizontal li
+
+	}
+}
+
+#wrapper {
+    margin-top:168px
+  }
+
+
+
+
+
+#home{
+
+}
