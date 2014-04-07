@@ -36,7 +36,12 @@ ol {
   background-color: #67af3b;
 
 }
+@media (max-width: 768px) {
 
+}
+#bs-example-navbar-collapse-1 ul li{
+    width: 12%;
+  }
 h1 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -490,11 +495,17 @@ ul.row {
 }*/
 #menu-principal{
   background-color: #fff;
-  height: 95px;
+  min-height: 95px;
 }
 #wrapper {
   margin-top: 125px;
 }
+@media (max-width: 1199px) and (min-width: 768px) {
+  #wrapper {
+    margin-top: 250px;
+  }
+}
+
 #menu-principal ul li a{
   height: 95px;
 
