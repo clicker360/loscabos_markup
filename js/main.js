@@ -55,7 +55,7 @@ jQuery(document).ready(function() {
         var body = $("html, body");
         body.animate(
             {
-                scrollTop:top-120
+                scrollTop:top-130
             },
             '1000', 
             'swing', 
