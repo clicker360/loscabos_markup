@@ -48,4 +48,22 @@ jQuery(document).ready(function() {
             }
         }
     )
+    $(".nav_vertical ul li").on('click',function(){
+        var bullet = $(this)
+        var id = $(this).attr('data-referer');
+        var top = $("#"+id).position().top;
+        var body = $("html, body");
+        body.animate(
+            {
+                scrollTop:top-120
+            },
+            '1000', 
+            'swing', 
+            function() { 
+                $(".nav_vertical ul li").removeClass('current');
+                bullet.addClass('current');
+
+            });
+        
+    })
 });

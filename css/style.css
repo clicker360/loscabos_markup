@@ -10,6 +10,33 @@ ol {
   margin-top: 0;
   margin-bottom: 0px;
 }
+.nav_vertical{
+  position: fixed;
+  top: 30%;
+  right: 0;
+  width: 100px;
+  height: 200px;
+}
+.nav_vertical ul li{
+  background-color: #555555;
+  width: 15px;
+  height: 15px !important;
+  cursor: pointer;
+  margin-bottom: 10px;
+    /*para Firefox*/
+  -moz-border-radius: 15px 15px 15px 15px;
+  /*para Safari y Chrome*/
+  -webkit-border-radius: 15px 15px 15px 15px;;
+  /* para Opera */
+  border-radius: 15px 15px 15px 15px;;
+}
+.nav_vertical ul li:hover, 
+.nav_vertical ul li.current
+{
+  background-color: #67af3b;
+
+}
+
 h1 {
   margin-top: 0px;
   margin-bottom: 0px;
