@@ -1,6 +1,9 @@
 @import url("bootstrap.css");
 @import url("settings.css");
 
+a:hover{
+	text-decoration: none;
+}
 * {
   margin: 0 ;
   padding: 0;
@@ -500,7 +503,7 @@ ul.row {
   min-height: 95px;
 }
 #wrapper {
-  margin-top: 125px;
+  margin-top: 145px;
 }
 @media (max-width: 1199px) and (min-width: 768px) {
   #wrapper {
@@ -530,10 +533,15 @@ ul.row {
   float: right;
   margin-top: 15px;
   margin-right: 30px;
-  background-color: #0d71af;
+  background-color: #5aa9e0;
+  -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+  -webkit-border-radius: 4.864864864864865px;
+  -moz-border-radius: 4.864864864864865px;
+  border-radius: 4.864864864864865px;
   text-align: center;
   padding-top: 8px;
-  border-bottom: 6px solid #3a579b;
 }
 
 #menu-principal #bookNow a{
@@ -571,6 +579,9 @@ min-height: 30px;
   margin.top: 43px;
   margin-bottom: 23px;
 }
+.titulo-seccionB{
+  color: #ffffff;
+}
 .titulo-seccion span{  
   padding-bottom: 6px;
   border-bottom: 1px solid #555555;
@@ -587,10 +598,10 @@ min-height: 30px;
 .actividad img{
   width: 100%;
 }
-.actividad .thumbnail{
+/*.actividad .thumbnail{
   height: 137px;
 
-}
+}*/
 .caption h3 a{
   font-family: 'Roboto-Regular';
   font-size: 16px;
@@ -610,23 +621,17 @@ min-height: 30px;
   background-color: #67af3b;
   text-decoration: none;
   color: #ffffff;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  font-size: 25px;
-  text-decoration: none;
-  border-bottom: 6px solid #6da527;
-  text-decoration: none !important;
-  /*para Firefox*/
-  -moz-border-radius: 6px 6px 6px 6px;
-  /*para Safari y Chrome*/
-  -webkit-border-radius: 6px 6px 6px 6px;
-  /* para Opera */
-  border-radius: 6px 6px 6px 6px;
-  width: auto;
-  padding: 10px 20px;
-  text-shadow: 2px 2px #555555;
-  line-height: 20px;
-  position: relative;
+  font-size: 17px;
+  padding: 8px;
+  text-shadow: 0px -1px 0px rgba(255, 255, 255, 0);
+  -webkit-border-radius: 4.864864864864865px;
+  -moz-border-radius: 4.864864864864865px;
+  border-radius: 4.864864864864865px;
+  -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .btnVerde:hover{
   color: #ffffff;
@@ -952,6 +957,10 @@ min-height: 30px;
     color: #c1d5a1;
 
   }
+
+.desc-seccionB{
+  color: #ffffff;
+}
 /* NOTICIAS */
 #col-noticias{
   min-height: 575px;
@@ -1366,3 +1375,164 @@ min-height: 30px;
 
 
 /*BXSLIDER*/
+/*actividades ISOTOPE */
+.actividadesContainer{
+  width:100%
+}
+h1#myHeading{
+  color:#fff;
+  text-align:center;
+  margin:0;
+  padding:20px;
+  background:#0081e7;
+  margin-bottom:13px;
+}
+.actividadesVer{  
+margin-bottom: 10px;
+margin-top: 50px;
+color: #555555;
+font-size: 20px;
+}
+.actividadesFilter{
+  margin-bottom:10px;
+  margin-top:50px;
+}
+.actividadesFilter li{
+  padding-right: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 8px;
+  text-shadow: 0px -1px 0px rgba(255, 255, 255, 0);
+  -webkit-border-radius: 4.864864864864865px;
+  -moz-border-radius: 4.864864864864865px;
+  border-radius: 4.864864864864865px;  
+  background: #5aa9e0;
+  -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+  /*width: 90%;
+  position: absolute;*/  
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .actividadesFilter li{
+    margin-left: 10px;
+    width: 14.5%;    
+    display: inline;
+  }
+}
+.actividadesFilter li a{
+  color: #ffffff;
+}
+.actividadesFilter a:hover{
+}
+.actividadesFilter a:active{
+}
+.actividadesFilter a.current{
+}
+.isotope-item{
+  z-index:2;
+}
+.isotope-hidden.isotope-item{
+  pointer-events:none;
+  z-index:1;
+}
+.actividadesContainer{
+  padding-top:40px;
+}
+.actividadesContainer li{
+  margin-bottom: 20px;
+}
+/*.actividadesContainer div img{
+  width:269px;
+}*/
+.isotope,.isotope .isotope-item{
+  -webkit-transition-duration:.8s;
+  -moz-transition-duration:.8s;
+  -ms-transition-duration:.8s;
+  -o-transition-duration:.8s;
+  transition-duration:.8s;
+}
+.isotope{
+  -webkit-transition-property:height,width;
+  -moz-transition-property:height,width;
+  -ms-transition-property:height,width;
+  -o-transition-property:height,width;
+  transition-property:height,width;
+}
+.isotope .isotope-item{
+  -webkit-transition-property:-webkit-transform,opacity;
+  -moz-transition-property:-moz-transform,opacity;
+  -ms-transition-property:-ms-transform,opacity;
+  -o-transition-property:-o-transform,opacity;
+  transition-property:transform,opacity;
+}
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition{
+  -webkit-transition-duration:0s;
+  -moz-transition-duration:0s;
+  -ms-transition-duration:0s;
+  -o-transition-duration:0s;
+  transition-duration:0s;
+}
+/*actividades ISOTOPE */
+
+/*acitividades home*/
+
+#actividadesHome{
+  height: 250px;
+  background-color: #555555;
+}
+.actividadesVerComo{  
+  margin-bottom: 10px;
+  margin-top: 50px;
+  color: #555555;
+  font-size: 20px;
+}
+.verComo li{
+  display: inline;
+}
+.verComo li a{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 8px;
+  text-shadow: 0px -1px 0px rgba(255, 255, 255, 0);
+  -webkit-border-radius: 4.864864864864865px;
+  -moz-border-radius: 4.864864864864865px;
+  border-radius: 4.864864864864865px;
+  background: #5aa9e0;
+  -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+}
+
+.hr-light-actividades{
+  width: 94%;
+  margin: auto;
+  margin-top: 30px;
+  border: 0;
+  color: #e5e5e5 !important;
+  background-color: #e5e5e5 !important;
+  height: 3px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.actividadesContainer .imgGrid{
+  padding-right: 0;
+  padding-left: 0;
+}
+.actividadesContainer .imgGrid{
+  -webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+   -o-transition: all 1s ease;
+}
+.actividadesContainer .divBtn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.actividadesContainer .divShare a{
+  color: #d4d4d4;
+}
+/*acitividades home*/

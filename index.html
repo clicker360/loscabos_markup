@@ -16,14 +16,13 @@
 
 
 </head>
-<body id="home">
+<body id="home" onload="initialize()">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
             <![endif]-->
 
             <header class="navbar navbar-fixed-top">
             	<div id="menu-global">
-
             		<div class="container" >
 
             			<div class="row">
@@ -189,6 +188,7 @@
                                         <a href="#">
                                             <span class="flaticon-appointment1"></span><br>
                                             Directorio
+                                            
                                         </a>
                                     </li>        
                                     <li>
@@ -763,8 +763,9 @@
         </div>      
     </div>
     <div class="col-md-12 mapa-directorio">
-        <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=los+cabos&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=61.582079,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=Municipio+de+Los+Cabos,+Baja+California+Sur,+M%C3%A9xico&amp;ll=23.25172,-109.749067&amp;spn=0.01779,0.033023&amp;t=m&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-            </div>
+
+        <!--<iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=es-419&amp;geocode=&amp;q=Los+Cabos,+M%C3%A9xico&amp;aq=0&amp;oq=los+cabos&amp;sll=37.0625,-95.677068&amp;sspn=61.582079,135.263672&amp;ie=UTF8&amp;hq=&amp;hnear=Municipio+de+Los+Cabos,+Baja+California+Sur,+M%C3%A9xico&amp;t=m&amp;z=10&amp;ll=23.25172,-109.749067&amp;output=embed"></iframe>-->
+        <div id="map_canvas" style="width:100%; height:500px;"></div>
     <div class="container">
         <div class="row">
             <button  class="btnVerde center-block" href="">Conoce nuestro directorio<br><span>vive una gran experiencia</span></button>
@@ -999,7 +1000,30 @@
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>   
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBhPQ50RdZQDLfY4yYD_r9OXT4_SaJpEgs&sensor=true"></script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);        
+            // Info Window
+        var infowindow = null;
+        var latLng = new google.maps.LatLng(-34.397, 150.644);
+        var marker = new google.maps.Marker({
+                    position: latLng,
+                    map: map,
+                    icon: 'http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=|FF6600|FFFFFF',
+                    content: 'post_content',
+                    title: 'SiteID'
+                });
+      }
+      jQuery(document).ready(function(){
+        initialize();
+      })
+    </script>
 
 </body>
 </html>
