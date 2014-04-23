@@ -82,7 +82,7 @@ jQuery(document).ready(function() {
         $(this).addClass('current');
  
         var selector = $(this).attr('data-filter');
-        $container.isotope({
+        isotope = $container.isotope({
             filter: selector,
             animationOptions: {
                 duration: 750,
@@ -92,18 +92,17 @@ jQuery(document).ready(function() {
          });
          return false;
     });
-    $(".verLista").on('click',function(){
-        var container = $(this).attr('data-content');
-        $(container).children('li').removeClass('col-md-3');
-        $(container).children('li').addClass('col-md-12');
-        $(container).children('li').children('div.imgGrid').removeClass('col-md-12');
-        $(container).children('li').children('div.imgGrid').addClass('col-md-4');
-        $(container).children('li').children('div.thumbnail').removeClass('col-md-12');
-        $(container).children('li').children('div.thumbnail').addClass('col-md-8');
+
+    $(".parentGridList1").gridList(
+        '.actividadesContainer' ,
+        '.verGrid',
+        '.verLista'
+    );
+    /*$(".verLista , .verGrid").on('click',function(){
         setTimeout(
             function(){
                 $container.isotope({
-                    filter: '*',
+                    filter: ($(".isotopeOption a.current").attr('data-filter')) ? $(".isotopeOption a.current").attr('data-filter') : '*',
                     animationOptions: {
                         duration: 750,
                         easing: 'linear',
@@ -111,40 +110,8 @@ jQuery(document).ready(function() {
                     }
                 });
             },
-            250
-        );
-        /*$container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });*/
-
-        return false;
-    });
-    $(".verGrid").on('click',function(){
-        var container = $(this).attr('data-content');
-        $(container).children('li').removeClass('col-md-12');
-        $(container).children('li').addClass('col-md-3');
-        $(container).children('li').children('div.imgGrid').removeClass('col-md-4');
-        $(container).children('li').children('div.imgGrid').addClass('col-md-12');
-        $(container).children('li').children('div.thumbnail').removeClass('col-md-8');
-        $(container).children('li').children('div.thumbnail').addClass('col-md-12');
-         setTimeout(
-            function(){
-                $container.isotope({
-                    filter: '*',
-                    animationOptions: {
-                        duration: 750,
-                        easing: 'linear',
-                        queue: false
-                    }
-                });
-            },
-            250
+            500
         );
         return false;
-    });
+    });*/
 });
