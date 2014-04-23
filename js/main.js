@@ -98,20 +98,4 @@ jQuery(document).ready(function() {
         '.verGrid',
         '.verLista'
     );
-    /*$(".verLista , .verGrid").on('click',function(){
-        setTimeout(
-            function(){
-                $container.isotope({
-                    filter: ($(".isotopeOption a.current").attr('data-filter')) ? $(".isotopeOption a.current").attr('data-filter') : '*',
-                    animationOptions: {
-                        duration: 750,
-                        easing: 'linear',
-                        queue: false
-                    }
-                });
-            },
-            500
-        );
-        return false;
-    });*/
 });
