@@ -39,7 +39,7 @@
             }
             function showList(){  
                 if(_container.hasClass('viewGrid')){
-                    _container.fadeOut(30,function(){ 
+                    _container.fadeOut(300,function(){ 
                         _container.removeClass('viewGrid').addClass('viewList');    
                         _container.css('opacity', 0);  
                         _parentGridList.find(_container).find('div.imgGrid').removeClass('col-md-12').addClass('col-md-4');
