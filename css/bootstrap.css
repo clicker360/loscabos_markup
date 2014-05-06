@@ -568,6 +568,13 @@ ol ol {
   padding-left: 0;
   list-style: none;
 }
+/*acitividades homeExtendido*/
+.list-unstyled-act > li{
+  padding-left: 10;
+  margin-left: 10px;
+  list-style: none;
+  float: left;
+}
 
 .list-inline {
   padding-left: 0;
