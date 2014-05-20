@@ -503,7 +503,11 @@ ul.row {
   min-height: 95px;
 }
 #wrapper {
-  margin-top: 145px;
+  margin-top:145px;
+  height: auto;
+}
+.info{
+    margin-bottom: 30px;
 }
 @media (max-width: 1199px) and (min-width: 768px) {
   #wrapper {
@@ -576,7 +580,7 @@ min-height: 30px;
   font-family: 'Quattrocento';
   font-size: 40px;
   color: #555555;
-  margin.top: 43px;
+  margin-top: 43px;
   margin-bottom: 23px;
 }
 .titulo-seccionB{
@@ -995,7 +999,7 @@ min-height: 30px;
 
 /* DIRECTORIO */
 #sec-directorio{
-  height: 780px;
+  height: auto;
 }
 
 /********************************
@@ -1379,7 +1383,7 @@ min-height: 30px;
 /*BXSLIDER*/
 /*actividades ISOTOPE */
 .actividadesContainer{
-  width:100%
+  width:100%;
 }
 h1#myHeading{
   color:#fff;
@@ -1592,14 +1596,99 @@ Actividades Single    ----------------------------------------------------------
 }
 
 /* -------------------------------------------------------------------------------------
+Archivo ----------------------------------------------------------------------------- */
+
+.archivo{
+    padding: 0;
+}
+
+
+/* -------------------------------------------------------------------------------------
+Directorio-Home ----------------------------------------------------------------------- */
+.directorioHome{
+  height: 360px;
+  background-color: #dad7d7; 
+  color: #555555;
+}
+.directorioHome hr{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555555;
+}
+.directorioHome-Content{
+ background-color: #f5f5f6;
+}
+.directorioHome-titulo{
+  font-family: 'Quattrocento';
+  font-size: 30px;
+  color: #555555;
+  text-align: left;
+  margin: 53px 0 48px 0;
+}
+.directorioHome-subtitle{
+  font-family: 'Roboto-Light';
+  font-size: 13px;
+  color: #7e7e7f;
+  text-align: left;
+  margin: 53px 0 48px 0;
+}
+.directorioHome .form-inline{
+    border: solid 1px;
+}
+.directorioHome-Content ul{
+  list-style: none;  
+}
+.directorioHome-bn{
+  margin: 67px 0 0 0;
+  color: #fff;
+  text-align: center;
+  height: 290px;
+  background-color: #000;
+  padding: 85px 0;
+}
+.directorioHome-bn h3{
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 38px;
+}
+.directorioHome-Ml .col-md-12{
+  padding: 0;
+}
+.directorioHome-Ml .btnVerde.left{
+ float: left;
+ margin:10px 13px 10px 6px;
+}
+.directorioHome-Ml .btnVerde.left.azul{
+    background-color: #117ec2;
+}
+.directorioHome-Ml .btnVerde.mas{
+ margin:40px 0 60px 0;
+}
+/* -------------------------------------------------------------------------------------
 Noticias-Home    ----------------------------------------------------------------------- */
 .noticiasHome-Ext{
   height: 419px;
   background-color: #555555;
+  padding-bottom: 30px;
+  color: #fff;
+}
+.noticiasHome-Ext hr{
+  color: #353535;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .noticiasHome-Content{
   background-color: #f5f5f6;
-  padding-top: 37px;
+}
+.noticiasVerComo{  
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: #555555;
+  font-size: 20px;
+}
+.Margin{
+  margin: 30px;
 }
 .noticiasHome-Content .col-md-9{
 	width:100%;
@@ -1640,10 +1729,9 @@ Noticias-Home    ---------------------------------------------------------------
 /* -------------------------------------------------------------------------------------
 Sidebar Noticias-Home------------------------------------------------------------------------ */
 
-
 .noticias-SB{
   width:25.5%;
-  margin: -757px 0 0 -10px;
+  margin: -867px 0 0 -10px;
   float:right;
   padding-right:32px;
 }
@@ -1658,9 +1746,9 @@ Sidebar Actividades_extendido---------------------------------------------------
   height: auto;
   margin-bottom:30px;
   padding:10px 15px;
-  -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
-  box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.20);
+  -moz-box-shadow:    0px 1px 1px rgba(50, 50, 50, 0.20);
+  box-shadow:         0px 1px 1px rgba(50, 50, 50, 0.20);
 }
 .widget-title .icon-sidebar{
   text-align: right;
@@ -1673,8 +1761,7 @@ Sidebar Actividades_extendido---------------------------------------------------
   text-align: left;
   font-size: 13px;
 }
-.newsletter {
- 
+.newsletter { 
 }
 .newsletter .form-control{
  border: none;
